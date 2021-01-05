@@ -1,0 +1,16 @@
+.equipecontainer .container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.equipecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0px;
+}
+
+.equipecontainer .bottom {
+    display: flex;
+}

@@ -1,0 +1,30 @@
+.container-radio {
+    width: 100%;
+    height: 80vh;
+    overflow: scroll;
+    background-image: url("../img/morpho.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+.item-radio {
+    height: 80vh;
+    width: 100%;
+}
+
+.radio-1 {
+    height: 100%;
+    width: 50%;
+    box-shadow: 8px 6px 20px 0px rgba(0, 0, 0, 0.24);
+    background-color: rgba(255, 255, 255, 0.486);
+
+}
+
+.radio-2 {
+    height: 100%;
+    width: 50%;
+    box-shadow: -10px 6px 20px 0px rgba(0, 0, 0, 0.24);
+    background-color: rgba(255, 255, 255, 0.486);
+
+    margin-left: 50%;
+}
