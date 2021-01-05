@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+<link rel="icon" href="img/logo_veter.jpg">
+</head>
+
+<body style="color: rgb(99, 109, 234);">
+
+
+
+    <!-- Contact Us Section -->
+    <section class="Material-contact-section section-padding section-dark">
+        <div class="container">
+            <div class="row">
+
+                <div> <a href="index.html"><img src="img/go_back.png" width="50" height="50"></a>Retour</div>
+                <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                    <h1 class="section-title">J'adore Vous Entendre</h1>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Section Titile -->
+                <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+
+
+                    <div class="find-widget">
+                        La Clinique: <a href="https://hostriver.ro">Louis Pasteur</a>
+                    </div>
+                    <div class="find-widget">
+                        Adresse: <a href="#">4435 Paris202</a>
+                    </div>
+                    <div class="find-widget">
+                        Phone: <a href="#">+123-456-789</a>
+                    </div>
+
+                    <div class="find-widget">
+                        Site Web: <a href="https://Louis Pasteur.ro">www.louis pasteur.com</a>
+                    </div>
+                    <div class="find-widget">
+                        Nos Horaires: <a href="#">Du lundi au samedi: 09:30 AM - 10.30 PM</a>
+                    </div>
+                </div>
+                <!-- contact form -->
+                <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                    <form class="shake" role="form" method="post" id="contactForm" name="contact-form"
+                        data-toggle="validator">
+                        <!-- Name -->
+                        <div class="form-group label-floating">
+                            <label class="control-label" for="name">Nom</label>
+                            <input class="form-control" id="name" type="text" name="nom" required
+                                data-error="Please enter your name">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group label-floating">
+                            <label class="control-label" for="name">Prénom</label>
+                            <input class="form-control" id="lastname" type="text" name="Prénom" required
+                                data-error="Please enter your name">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- email -->
+                        <div class="form-group label-floating">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control" id="email" type="email" name="email" required
+                                data-error="Please enter your Email">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- Subject -->
+                        <div class="form-group label-floating">
+                            <label class="control-label">Joindre un fichier</label>
+                            <input class="form-control" id="msg_subject" type="text" name="joindre un fichier" required
+                                data-error="Please enter your message subject">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- Message -->
+                        <div class="form-group label-floating">
+                            <label for="message" class="control-label"> Votre Message</label>
+                            <textarea class="form-control" rows="3" id="message" name=" votre message" required
+                                data-error="Write your message"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- Form Submit -->
+                        <div class="form-submit mt-5">
+                            <button class="btn btn-common" type="submit" id="form-submit"><i
+                                    class="material-icons mdi mdi-message-outline"></i> Envoyer</button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+<script src="js/contact.js"></script>
+
+</html>

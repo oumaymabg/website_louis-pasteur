@@ -1,0 +1,600 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Boutique</title>
+    <meta name="description">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="js/navbar.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/boutique.css">
+    <link rel="stylesheet" href="css/boutique-card.css">
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.buy').on('click', function (e) {
+                e.preventDefault();
+
+                $('body').toggleClass('expanded');
+            })
+        });
+    </script>
+<style>
+.produit{
+display: inline;
+}
+</style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<link rel="icon" href="img/logo_veter.jpg">
+
+<body>
+
+    <!-- available colors: primary | secondary | white | ghost-->
+    <!-- available sizes: xl | lg | md | sm-->
+    <!-- the bootstrap navbar-->
+    <nav class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl" data-startColor="navbar--color--ghost"
+        data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md">
+        <div class="container">
+             <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#mobileNav"
+                    aria-expanded="false"><span style="color:antiquewhite">More</span></button><a
+                    class="navbar-brand" href="index.html">Louis Pasteur.</a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="mobileNav">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="Nos services.html">Nos
+                            Services<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Radiographie.html">Radiographie</a></li>
+                            <li><a href="Scanner.html">Scanner</a></li>
+                            <li><a href="Echographie.html">Échographie</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                            href="Descipline.html">Descipline
+                            Vétérinaires<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ORL.html">ORL</a></li>
+                            <li><a href="Dendisterie.html">Dentisterie</a></li>
+                            <li><a href="Cancerologie.html">Cancérologie</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                            href="Professionnel.html">Professionnel
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="laformation.html">Année de Formation pour les jeunes docteurs vérérinaires</a>
+                            </li>
+                            <li><a href="Stage.html">Stages</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="Boutique.html">Boutique</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Laclinique.html">La
+                                Clinique
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                               
+                                <li><a href="Notreequipe.html">Notre équipe</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--<img src="img/radiography.jpg" width="100%" height="100%"> 
+!-->
+    <div id="box">
+        <div class="x x1">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/boutique1.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/boutique2.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/boutique3.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/boutique4.jpg">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="x x2">
+            <div class="y"><img src="img/livraison.jpg"></div>
+            <div class="y"><iframe width="100px" height="100px"
+                    src="https://www.youtube.com/embed/yXVHbpddfgQ?autoplay=1" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+        </div>
+    </div>
+
+    <div id="linkcontainer">
+        <div class="lc-header">
+            <h1 class="animated heartBeat infinite">Nos Produits</h1>
+        </div>
+        <div class="lc-link"><a href="#chien"><h1>Chien</h1> </a></div>
+        <div class="lc-link"><a href="#chat"><h1> Chat</h1></a></div>
+        <div class="lc-link"><a href="#cheval"><H1>Cheval</h1></a></div>
+    </div>
+    <div id="chien" class="paragraphs">
+<div class="row">
+<div class="span4">
+        <img src="img/chien.jpg" alt="chien" width="370" height="260" style="float:left ; margin-right: 25px"  >
+        <div class="content-heading"><h3 style="color: 2256AB">Louis Pasteur vous propose une large gamme de produits vétérinaires destinés à la santé et au bien-être
+            de votre
+            chien.<br> Vous trouverez de l'alimentation, des shampoings, vermifuges, produits anti-puces...<br> Tous nos
+            produits
+            vétérinaires ont été sélectionnés avec soin pour garantir à votre chien une santé irréprochable. <br>Parmi
+            nos
+            marques vous trouverez Royal Canin, Mérial, Bayer, Clément Thékan, ou encore MSD.<br> Parcourez nos
+            différentes
+            gammes de produits vétérinaires et profitez de nos offres.</h3>
+</p></div>
+</div>
+</div>
+</div>
+<br>
+<br>
+        <div class="container">
+  <div class="row">
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/bt1.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit1">Greenvet - Rhodeo </h4>
+          
+          <div class="options d-flex flex-fill">
+         
+            <select class="custom-select ml-1" id="nombre1">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix1">50TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(1)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/bt2.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit2">Vans Sk8-Hi MTE </h4>
+          
+          <div class="options d-flex flex-fill">
+            
+            <select class="custom-select ml-1" id="nombre2">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix2">12TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(2)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/bt3.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit3">ROYAL CANIN </h4>
+          
+          <div class="options d-flex flex-fill">
+            
+            <select class="custom-select ml-1" id="nombre3">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix3">100TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(3)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/bt4.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit4"> Collier Aboistop</h4>
+          
+          <div class="options d-flex flex-fill">
+            
+            <select class="custom-select ml-1" id="nombre4">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix4">200TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(4)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+
+    </div>
+</div>
+
+    
+<hr>
+    <div id="chat" class="paragraphs">
+<div class="row">
+<div class="span4">
+        <img src="img/chat.jpg" alt="chat" width="370" height="260" style="float:left ; margin-right: 25px">
+        <div class="content-heading"><h3 style="color: 2256AB">Louis Pasteur vous propose une large gamme de produits vétérinaires destinés à la santé et au bien-être
+            de
+            votre
+            chat. Prenez soin de lui avec nos gammes de produits d'alimentation, les vermifuges, produits
+            anti-puces,
+            shampoings... Nos produits vétérinaires ont été sélectionnés avec soin par nos pharmaciens pour garantir
+            à
+            votre
+            chat une santé exemplaire. Parmi les marques que nous proposons vous trouverez Ceva, Novartis, ou
+            Clement
+            Thékan. Vous retrouverez chez Louis Pasteur le meilleur des produits vétérinaires, pour le bonheur de
+            votre
+            chat.
+        </h3>
+</div>
+  </div>
+</div>
+</div>
+        <div class="container">
+  <div class="row">
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/btchat.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit5"> CORRECT'IT Coupe</h4>
+          
+          <div class="options d-flex flex-fill">
+         
+            <select class="custom-select ml-1" id="nombre5">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix5">80TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(5)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/btchat1.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit6">Cartimax</h4>
+          
+          <div class="options d-flex flex-fill">
+         
+            <select class="custom-select ml-1" id="nombre6">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix6">35TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(6)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/btchat2.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit7">Balsamic air</h4>
+          
+          <div class="options d-flex flex-fill">
+         
+            <select class="custom-select ml-1" id="nombre7">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix7">60TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(7)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/btchat3.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit8">Vetidral</h4>
+          
+          <div class="options d-flex flex-fill">
+         
+            <select class="custom-select ml-1" id="nombre8">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix8">15TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(8)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+
+    </div>
+</div>
+  
+<hr>
+    <div id="cheval" class="paragraphs">
+<div class="row">
+<div class="span4">
+        <img src="img/cheval.jpg" alt="cheval" width="370" height="260" style="float:left ; margin-right: 25px">
+        <div class="content-heading"><H3 style="color: 2256AB">Louis Pasteur vous propose une large gamme de produits vétérinaires destinés à la santé et au bien-être
+            de
+            votre
+            cheval. prenez soin de lui avec nos gammes de produits d'élevage, les soins cutanés, vermifuges,
+            produits
+            anti-insectes, soins du crin, des sabots... Tous nos produits vétérinaires ont été sélectionnés avec
+            soin
+            pour
+            garantir à votre cheval une santé irréprochable. Parmi nos marques vous trouverez Equistro, Audevard ou
+            encore .
+            Vous retrouverez chez Louis Pasteur le meilleur des produits vétérinaires.</H3>
+ </div>
+ </div> 
+ </div> 
+</div>    
+<div class="container">
+  <div class="row">
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/cheval1.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit9"> Ekyflex mobility</h4>
+          
+          <div class="options d-flex flex-fill">
+         
+            <select class="custom-select ml-1" id="nombre9">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix9">30TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(9)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/cheval2.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="porduit10"> Bionutron start</h4>
+          
+          <div class="options d-flex flex-fill">
+         
+            <select class="custom-select ml-1" id="nombre10">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix10">300TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(10)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/cheval3.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit10"> TWYDIL HEMATINIC</h4>
+          
+          <div class="options d-flex flex-fill">
+         
+            <select class="custom-select ml-1" id="nombre10">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix11">55TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(11)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+        <div class="produit col-sm-3"><div class="card-body">
+         
+          <h6 class="card-subtitle mb-2 text-muted"><img src="img/cheval4.jpg" alt="bt2" width="200" height="200" style="margin-left: 15px ; margin-right: 25px"></h6>
+           <h4 class="card-title" id="produit12">Hoof pex</h4>
+          
+          <div class="options d-flex flex-fill">
+         
+            <select class="custom-select ml-1" id="nombre12">
+              <option selected="" >Nombre</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-success">
+              <h5 class="mt-4" id="prix12">70TND</h5>
+            </div>
+            <a href="#" class="btn btn-danger mt-3" onclick="submit(12)"><i class="fas fa-shopping-cart"></i> Ajouter à la carte</a>
+          </div>
+        </div></div>
+
+    </div>
+</div>
+    
+
+<br>
+<br>
+<br>
+
+
+
+
+<div style="background-color: EDEEF1">
+      <center>
+        <h1 style="color:577EF2">Nos Partenaires</h1>
+      </center>
+      <img src="img/partenaire3.jpg" height="150" width="120" style="margin-left: 15px ; margin-right: 15px">
+      <img src="img/partenaire4.png" height="150" width="120" style="margin-left: 15px ; margin-right: 15px">
+      <img src="img/partenaire5.png" height="150" width="120" style="margin-left: 15px ; margin-right: 15px">
+      <img src="img/partenaire6.jpg" height="150" width="120" style="margin-left: 15px ; margin-right: 15px">
+      <img src="img/partenaire7.jpg" height="150" width="120" style="margin-left: 15px ; margin-right: 15px">
+      <img src="img/partenaire8.png" height="150" width="120" style="margin-left: 15px ; margin-right: 15px">
+      <img src="img/partenaire10.jpg" height="150" width="120" style="margin-left: 15px ; margin-right: 15px">
+      <img src="img/partenaire11.jpg" height="150" width="120" style="margin-left: 15px ; margin-right: 15px">
+      <img src="img/partenaire12.png" height="150" width="120" style="margin-left: 15px ; margin-right: 15px">
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Clinique Vétérinaire Louis Pasteur</h2>
+                    <p class="pr-5 text-white-50">14 boulevard des chenes , 78280 Guyancourt
+                    </p>
+                    <p>
+                        <a href="#">
+                            <i class="fa fa-facebook-square mr-1"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3"></h4>
+                    <ul class="m-0 p-0">
+                        <li>-
+                            <a href="index.html">Accueil</a>
+                        </li>
+                        <li>-
+                            <a href="Radiographie.html">Radiographie</a>
+                        </li>
+                        <li>-
+                            <a href="Scanner.html">Scanner</a>
+                        </li>
+                        <li>-
+                            <a href="Echographie.html">Echographie</a>
+                        </li>
+                        <li>-
+                            <a href="ORL.html">ORL</a>
+                        </li>
+                        <li>-
+                            <a href="Cancérologie.html">Cancérologie</a>
+                        </li>
+                        <li>-
+                            <a href="Dentisterie.html">Dendisterie</a>
+                        </li>
+                        <li>-
+                            <a href="laformation.html">La formation annuelle des vétérinaire à la clinique LOUIS
+                                PASTEUR</a>
+                        </li>
+                        <li>-
+                            <a href="stage.html">Stage</a>
+                        </li>
+                        <li>-
+                            <a href="Contact.html">Contact</a>
+                        </li>
+                        <li>-
+                            <a href="notreequipe.html">Notre équipe</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-4">HORAIRES</h4>
+                    <p>Hospitalisation & Urgences :</p>
+                    <p class="mb-0">
+                        <i class="fa fa-phone mr-3"></i>24h/7j</p>
+                    <p>
+                        <i class="fa fa-envelope-o mr-3"></i>info@LouisPasteur.com</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class="">
+                        <small class="text-white-50">© 2020. All Rights Reserved.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+<script src="js/boutique.js"></script>
+</html>
